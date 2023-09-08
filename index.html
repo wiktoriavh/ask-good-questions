@@ -26,7 +26,9 @@
     </p>
 
     <section class="m-auto w-[70ch] my-8">
-      <h2 class="text-3xl mb-4">Summarise your issue on one sentence</h2>
+      <h2 class="text-3xl mb-4" id="summarise">
+        Summarise your issue in one sentence
+      </h2>
       <p>
         Summarizing the question in one sentence means expressing your main
         problem or question in a short and clear statement. This helps people
@@ -41,15 +43,84 @@
         question.
       </p>
 
-      <label id="summarise" class="sr-only"
-        >Summarise your issue on one sentence</label
-      >
       <input
-        class="focus:border-teal-800 focus:shadow-outer shadow-teal-800/20 dark:shadow-teal-400/20 outline-none focus:dark:border-teal-400 w-full border-2 rounded border-zinc-900 dark:border-zinc-100 my-4 bg-inherit p-2"
+        class="focus:border-teal-800 focus:shadow-outer shadow-teal-800/20 dark:shadow-teal-400/20 outline-none focus:dark:border-teal-400 w-full border-[3px] rounded border-zinc-900 dark:border-zinc-100 my-4 bg-inherit p-2"
         type="text"
-        placeholder="Summarise your issue on one sentence"
-        for="summarise"
+        placeholder="Summarise your issue in one sentence"
+        aria-labelledby="summarise"
       />
+    </section>
+
+    <section class="m-auto w-[70ch] my-8">
+      <h2 class="text-3xl mb-4" id="problem">
+        Explain the Problem you are trying to solve
+      </h2>
+      <p>
+        Explaining the problem you're facing means providing a clear and
+        detailed account of the issue from the very beginning, without jumping
+        ahead to the solutions you've tried or what didn't work. This approach
+        helps prevent
+        <a
+          class="text-teal-800 dark:text-teal-400 underline underline-offset-4 hover:dark:bg-teal-400 hover:bg-teal-800 hover:dark:text-zinc-900 hover:text-zinc-100"
+          href="https://xyproblem.info"
+          >the XY Problem</a
+        >, where the focus shifts to solving a perceived solution rather than
+        addressing the actual underlying issue. By starting at the beginning and
+        describing the problem as it occurred, you ensure that potential helpers
+        can fully understand the context and provide more accurate and effective
+        assistance.
+      </p>
+
+      <textarea
+        class="focus:border-teal-800 focus:shadow-outer shadow-teal-800/20 dark:shadow-teal-400/20 outline-none focus:dark:border-teal-400 w-full border-[3px] rounded border-zinc-900 dark:border-zinc-100 my-4 bg-inherit p-2"
+        type="text"
+        placeholder="Explain the Problem you are trying to solve"
+        aria-labelledby="problem"
+        rows="5"
+      ></textarea>
+    </section>
+
+    <section class="m-auto w-[70ch] my-8">
+      <h2 class="text-3xl mb-4" id="solving">
+        Describe what you have tried to solve the problem
+      </h2>
+      <p>
+        Detailing your efforts to solve the problem involves sharing the steps
+        you've taken or the methods you've employed in your attempts to address
+        the issue. This includes any relevant actions, strategies, or code
+        snippets you've utilized. By providing this information, you enable
+        potential helpers to grasp your problem-solving process and offer more
+        targeted suggestions
+      </p>
+
+      <textarea
+        class="focus:border-teal-800 focus:shadow-outer shadow-teal-800/20 dark:shadow-teal-400/20 outline-none focus:dark:border-teal-400 w-full border-[3px] rounded border-zinc-900 dark:border-zinc-100 my-4 bg-inherit p-2"
+        type="text"
+        placeholder="Describe what you have tried to solve the problem"
+        aria-labelledby="solving"
+        rows="5"
+      ></textarea>
+    </section>
+
+    <section class="m-auto w-[70ch] my-8">
+      <h2 class="text-3xl mb-4" id="expectation">
+        Clarifying the expected result
+      </h2>
+      <p>
+        In this section, articulate the ultimate result or solution you are
+        aiming for. Clearly convey what you hope to achieve with your question.
+        Providing a crystal-clear picture of your desired outcome helps
+        potential helpers align their suggestions with your specific goals,
+        ensuring more accurate and relevant assistance.
+      </p>
+
+      <textarea
+        class="focus:border-teal-800 focus:shadow-outer shadow-teal-800/20 dark:shadow-teal-400/20 outline-none focus:dark:border-teal-400 w-full border-[3px] rounded border-zinc-900 dark:border-zinc-100 my-4 bg-inherit p-2"
+        type="text"
+        placeholder="Clarifying the expected result"
+        aria-labelledby="expectation"
+        rows="5"
+      ></textarea>
     </section>
 
     <script type="module" src="/main.js"></script>
