@@ -8,30 +8,25 @@ Alpine.data("question", () => ({
   problem: "",
   solving: "",
   expectation: "",
-  markup: "<strong>Nothing to preview yet</strong>",
-
-  init() {
-    console.log("init");
-    this.$watch("summarise", () => this.output());
-    this.$watch("problem", () => this.output());
-    this.$watch("solving", () => this.output());
-    this.$watch("expectation", () => this.output());
+  get markup() {
+    if (!this.summarise && !this.problem && !this.solving && !this.expectation)
+      return "<strong>Nothing to preview yet</strong>";
+    return this.output();
   },
 
+  init() {},
+
   output() {
-    console.log("output");
-    const combined = `${this.summarise}
-
-    # The Problem
-    ${this.problem}
-    
-    # What I tried
-    ${this.solving}
-    
-    # What I expect to happen
-    ${this.expectation}`;
-
-    this.markup = marked.parse(combined);
+    const combined = [
+      this.summarise,
+      "## The Problem",
+      this.problem,
+      "## What I tried",
+      this.solving,
+      "## What I expect to happen",
+      this.expectation,
+    ].join("\n\n");
+    return marked.parse(combined);
   },
 }));
 
