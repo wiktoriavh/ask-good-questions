@@ -18,7 +18,7 @@ Alpine.data("question", () => ({
 
   output() {
     const combined = [
-      this.summarise,
+      `# ${this.summarise}`,
       "## The Problem",
       this.problem,
       "## What I tried",
@@ -26,7 +26,10 @@ Alpine.data("question", () => ({
       "## What I expect to happen",
       this.expectation,
     ].join("\n\n");
-    return marked.parse(combined);
+
+    const html = marked.parse(combined);
+
+    return "<article class='prose lg:prose-xl'>" + html + "</article>";
   },
 }));
 
