@@ -29,7 +29,7 @@ Alpine.data("question", () => ({
 
     const html = marked.parse(combined);
 
-    return "<article class='prose lg:prose-xl'>" + html + "</article>";
+    return html;
   },
 }));
 

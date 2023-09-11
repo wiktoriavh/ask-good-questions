@@ -17,6 +17,6 @@ export default {
         outer: "0 0 0 0.5rem var(--tw-shadow-color)",
       },
     },
-    plugins: [require("@tailwindcss/typography")],
   },
+  plugins: [require("@tailwindcss/typography")],
 };
