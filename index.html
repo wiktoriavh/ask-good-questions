@@ -133,6 +133,12 @@
 
     <section class="m-auto w-[70ch] my-8">
       <h2 class="text-3xl mb-4">Your Question</h2>
+      <button
+        x-on:click="copy"
+        class="bg-teal-800 dark:bg-teal-400 dark:hover:bg-zinc-900 hover:bg-zinc-100 dark:border-teal-400 border-teal-800 border-[3px] dark:hover:text-teal-400 hover:text-teal-800 text-zinc-100 dark:text-zinc-900 px-4 py-2 w-full rounded my-4 font-bold"
+      >
+        Copy to Clipboard
+      </button>
       <article x-html="markup" class="prose dark:prose-invert"></article>
     </section>
 
