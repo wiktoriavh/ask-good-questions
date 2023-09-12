@@ -6,9 +6,37 @@ export default {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            color: theme("colors.zinc.900"),
             h1: {
-              color: theme("colors.gray.900"),
-              fontSize: theme("fontSize.4xl"),
+              fontSize: theme("fontSize.2xl"),
+              fontWeight: theme("fontWeight.bold"),
+            },
+            h2: {
+              fontSize: theme("fontSize.xl"),
+              fontWeight: theme("fontWeight.bold"),
+              marginTop: theme("spacing.4"),
+            },
+            a: {
+              color: theme("colors.teal[800]"),
+              dark: {
+                color: theme("colors.teal[400]"),
+              },
+              "&:hover": {
+                color: theme("colors.zinc.100"),
+                backgroundColor: theme("colors.teal.800"),
+              },
+            },
+          },
+        },
+        invert: {
+          css: {
+            color: theme("colors.zinc.100"),
+            a: {
+              color: theme("colors.teal.400"),
+              "&:hover": {
+                color: theme("colors.zinc.900"),
+                backgroundColor: theme("colors.teal.400"),
+              },
             },
           },
         },
