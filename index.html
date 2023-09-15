@@ -9,7 +9,7 @@
   </head>
   <body
     x-data="question"
-    class="dark:bg-zinc-900 dark:text-zinc-100 bg-zinc-100"
+    class="dark:bg-zinc-900 dark:text-zinc-100 bg-zinc-100 px-5"
   >
     <h1 class="text-4xl font-extrabold tracking-wide text-center mt-8">
       Your Roadmap to Effective Questions
@@ -17,7 +17,7 @@
     <p class="text-2xl font-bold text-center mt-2 mb-12">
       From Frustration to Clarity in Four Simple Steps
     </p>
-    <p class="w-[70ch] m-auto">
+    <p class="w-full max-w-[70ch] m-auto">
       Discover the undeniable power of asking the right questions. Explore how a
       well-constructed inquiry can be your secret weapon in obtaining the
       answers you need. Our four-step process will show you
@@ -28,7 +28,7 @@
       Elevate your questions, elevate your results.
     </p>
 
-    <section class="m-auto w-[70ch] my-8">
+    <section class="m-auto w-full max-w-[70ch] my-8">
       <h2 class="text-3xl mb-4" id="summarise">
         Summarise your issue in one sentence
       </h2>
@@ -56,7 +56,7 @@
       <div id="summarise-output"></div>
     </section>
 
-    <section class="m-auto w-[70ch] my-8">
+    <section class="m-auto w-full max-w-[70ch] my-8">
       <h2 class="text-3xl mb-4" id="problem">
         Explain the Problem you are trying to solve
       </h2>
@@ -86,7 +86,7 @@
       ></textarea>
     </section>
 
-    <section class="m-auto w-[70ch] my-8">
+    <section class="m-auto w-full max-w-[70ch] my-8">
       <h2 class="text-3xl mb-4" id="solving">
         Describe what you have tried to solve the problem
       </h2>
@@ -109,7 +109,7 @@
       ></textarea>
     </section>
 
-    <section class="m-auto w-[70ch] my-8">
+    <section class="m-auto w-full max-w-[70ch] my-8">
       <h2 class="text-3xl mb-4" id="expectation">
         Clarifying the expected result
       </h2>
@@ -131,7 +131,7 @@
       ></textarea>
     </section>
 
-    <section class="m-auto w-[70ch] my-8">
+    <section class="m-auto w-full max-w-[70ch] my-8">
       <h2 class="text-3xl mb-4">Your Question</h2>
       <button
         x-on:click="copy"
