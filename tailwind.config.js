@@ -18,9 +18,7 @@ export default {
             },
             a: {
               color: theme("colors.teal[800]"),
-              dark: {
-                color: theme("colors.teal[400]"),
-              },
+              backgroundColor: "rgba(17, 94, 89, 0.05)",
               "&:hover": {
                 color: theme("colors.zinc.100"),
                 backgroundColor: theme("colors.teal.800"),
@@ -33,6 +31,7 @@ export default {
             color: theme("colors.zinc.100"),
             a: {
               color: theme("colors.teal.400"),
+              backgroundColor: "rgba(45, 212, 191, 0.05)",
               "&:hover": {
                 color: theme("colors.zinc.900"),
                 backgroundColor: theme("colors.teal.400"),
