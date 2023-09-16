@@ -19,6 +19,11 @@ export default {
             a: {
               color: theme("colors.teal[800]"),
               backgroundColor: "rgba(17, 94, 89, 0.05)",
+              paddingLeft: theme("spacing.1"),
+              paddingRight: theme("spacing.1"),
+              marginLeft: "-0.25rem",
+              marginRight: "-0.25rem",
+              borderRadius: theme("borderRadius.md"),
               "&:hover": {
                 color: theme("colors.zinc.100"),
                 backgroundColor: theme("colors.teal.800"),
@@ -26,6 +31,7 @@ export default {
             },
           },
         },
+        
         invert: {
           css: {
             color: theme("colors.zinc.100"),
