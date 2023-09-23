@@ -29,6 +29,9 @@ export default {
                 backgroundColor: theme("colors.teal.800"),
               },
             },
+            "li::marker": {
+              color: theme("colors.teal.900"),
+            },
           },
         },
         
@@ -42,6 +45,9 @@ export default {
                 color: theme("colors.zinc.900"),
                 backgroundColor: theme("colors.teal.400"),
               },
+            },
+            "li::marker": {
+              color: theme("colors.teal.400"),
             },
           },
         },
