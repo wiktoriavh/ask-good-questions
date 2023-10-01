@@ -1,0 +1,15 @@
+{
+  "include": ["**/*.ts"],
+  "compilerOptions": {
+    "lib": ["ES2021", "DOM", "DOM.Iterable"],
+    "noEmit": true,
+    "declaration": true,
+    "declarationMap": true,
+    "target": "ES2019",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "allowSyntheticDefaultImports": true
+  }
+}
