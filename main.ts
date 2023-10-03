@@ -3,6 +3,12 @@ import { marked } from "marked";
 
 window.Alpine = Alpine;
 
+declare global {
+  interface Window {
+    Alpine: typeof Alpine;
+  }
+}
+
 Alpine.data("question", () => ({
   summarise: "",
   problem: "",
