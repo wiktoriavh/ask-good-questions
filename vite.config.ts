@@ -1,7 +1,17 @@
 import { defineConfig } from "vite";
+import { resolve } from "path";
 
 export default defineConfig(({}) => {
   return {
-    base: "/",
+    // base: "/",
+    build: {
+      outDir: "build",
+      rollupOptions: {
+        input: {
+          main: resolve(__dirname, "index.html"),
+          other: resolve(__dirname, "accessibility-statement/index.html"),
+        },
+      },
+    },
   };
 });
