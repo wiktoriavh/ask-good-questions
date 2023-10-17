@@ -1,13 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# Run Prettier to check for formatting issues
-npx prettier --write .
-
-# Run ESLint to check for linting issues
-npx eslint .
-
-
 # Run lint-staged
 npx lint-staged
 
