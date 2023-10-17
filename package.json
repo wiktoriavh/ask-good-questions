@@ -6,12 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
     "@types/alpinejs": "3.13.2",
     "autoprefixer": "^10.4.15",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
     "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3",
     "typescript": "5.2.2",
@@ -20,5 +23,11 @@
   "dependencies": {
     "alpinejs": "^3.13.0",
     "marked": "^8.0.1"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
