@@ -1,15 +1,14 @@
-import { defineConfig } from "vite";
-import { resolve } from "path";
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
-export default defineConfig(({}) => {
+export default defineConfig(() => {
   return {
-    // base: "/",
     build: {
-      outDir: "build",
+      outDir: 'build',
       rollupOptions: {
         input: {
-          main: resolve(__dirname, "index.html"),
-          other: resolve(__dirname, "accessibility-statement/index.html"),
+          main: resolve(__dirname, 'index.html'),
+          other: resolve(__dirname, 'accessibility-statement/index.html'),
         },
       },
     },

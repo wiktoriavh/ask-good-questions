@@ -10,8 +10,7 @@
   </head>
   <body
     x-data="question"
-    class="dark:bg-zinc-900 dark:text-zinc-100 bg-zinc-100 px-5"
-  >
+    class="dark:bg-zinc-900 dark:text-zinc-100 bg-zinc-100 px-5">
     <h1 class="text-4xl font-extrabold tracking-wide text-center mt-8">
       Your Roadmap to Effective Questions
     </h1>
@@ -52,8 +51,7 @@
         class="focus:border-teal-800 focus:shadow-outer shadow-teal-800/20 dark:shadow-teal-400/20 outline-none focus:dark:border-teal-400 w-full border-[3px] rounded border-zinc-900 dark:border-zinc-100 my-4 bg-inherit p-2"
         type="text"
         placeholder="Summarise your issue in one sentence"
-        aria-labelledby="summarise"
-      />
+        aria-labelledby="summarise" />
       <div id="summarise-output"></div>
     </section>
 
@@ -83,8 +81,7 @@
         type="text"
         placeholder="Explain the Problem you are trying to solve"
         aria-labelledby="problem"
-        rows="5"
-      ></textarea>
+        rows="5"></textarea>
     </section>
 
     <section class="m-auto w-full max-w-[70ch] my-8">
@@ -106,8 +103,7 @@
         type="text"
         placeholder="Describe what you have tried to solve the problem"
         aria-labelledby="solving"
-        rows="5"
-      ></textarea>
+        rows="5"></textarea>
     </section>
 
     <section class="m-auto w-full max-w-[70ch] my-8">
@@ -128,16 +124,14 @@
         type="text"
         placeholder="Clarifying the expected result"
         aria-labelledby="expectation"
-        rows="5"
-      ></textarea>
+        rows="5"></textarea>
     </section>
 
     <section class="m-auto w-full max-w-[70ch] my-8">
       <h2 class="text-3xl mb-4">Your Question</h2>
       <button
         x-on:click="copy"
-        class="bg-teal-800 dark:bg-teal-400 dark:hover:bg-zinc-900 hover:bg-zinc-100 dark:border-teal-400 border-teal-800 border-[3px] dark:hover:text-teal-400 hover:text-teal-800 text-zinc-100 dark:text-zinc-900 px-4 py-2 w-full rounded my-4 font-bold"
-      >
+        class="bg-teal-800 dark:bg-teal-400 dark:hover:bg-zinc-900 hover:bg-zinc-100 dark:border-teal-400 border-teal-800 border-[3px] dark:hover:text-teal-400 hover:text-teal-800 text-zinc-100 dark:text-zinc-900 px-4 py-2 w-full rounded my-4 font-bold">
         Copy to Clipboard
       </button>
       <article x-html="markup" class="prose dark:prose-invert"></article>

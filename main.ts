@@ -1,7 +1,5 @@
-import Alpine from "alpinejs";
-import { marked } from "marked";
-
-window.Alpine = Alpine;
+import Alpine from 'alpinejs';
+import { marked } from 'marked';
 
 declare global {
   interface Window {
@@ -9,11 +7,13 @@ declare global {
   }
 }
 
-Alpine.data("question", () => ({
-  summarise: "",
-  problem: "",
-  solving: "",
-  expectation: "",
+window.Alpine = Alpine;
+
+Alpine.data('question', () => ({
+  summarise: '',
+  problem: '',
+  solving: '',
+  expectation: '',
   get markup() {
     if (!this.summarise && !this.problem && !this.solving && !this.expectation)
       return "<h2 class='text-center my-4'>Nothing to preview yet</h2>";
@@ -22,13 +22,13 @@ Alpine.data("question", () => ({
   get markdown() {
     const combined = [
       `# ${this.summarise}`,
-      "## The Problem",
+      '## The Problem',
       this.problem,
-      "## What I tried",
+      '## What I tried',
       this.solving,
-      "## What I expect to happen",
+      '## What I expect to happen',
       this.expectation,
-    ].join("\n\n");
+    ].join('\n\n');
     return combined;
   },
 
