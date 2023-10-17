@@ -61,4 +61,5 @@ export default {
     },
   },
   plugins: [Typography],
+  plugins: [Typography],
 } satisfies Config;

@@ -37,6 +37,12 @@ devDependencies:
   lint-staged:
     specifier: ^14.0.1
     version: 14.0.1
+  husky:
+    specifier: ^8.0.0
+    version: 8.0.3
+  lint-staged:
+    specifier: ^14.0.1
+    version: 14.0.1
   postcss:
     specifier: ^8.4.29
     version: 8.4.29
@@ -2769,6 +2775,22 @@ packages:
         integrity: sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==,
       }
     engines: { node: '>= 14' }
+    dev: true
+
+  /yaml@2.3.2:
+    resolution:
+      {
+        integrity: sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==,
+      }
+    engines: { node: '>= 14' }
+    dev: true
+
+  /yocto-queue@0.1.0:
+    resolution:
+      {
+        integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==,
+      }
+    engines: { node: '>=10' }
     dev: true
 
   /yaml@2.3.2:
