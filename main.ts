@@ -14,12 +14,8 @@ Alpine.data('question', () => ({
   problem: '',
   solving: '',
   expectation: '',
-  get markup() {
-    if (!this.summarise && !this.problem && !this.solving && !this.expectation)
-      return "<h2 class='text-center my-4'>Nothing to preview yet</h2>";
-    return this.output();
-  },
-  get markdown() {
+  markup: '',
+  markdown() {
     const combined = [
       `# ${this.summarise}`,
       '## The Problem',
@@ -35,14 +31,20 @@ Alpine.data('question', () => ({
   init() {},
 
   output() {
-    const html = marked.parse(this.markdown);
+    const html = marked.parse(this.markdown());
 
     return html;
   },
 
   copy() {
-    navigator.clipboard.writeText(this.markdown);
+    navigator.clipboard.writeText(this.markdown());
   },
+
+  preview() {
+    this.markup = this.output();
+  },
+
+
 }));
 
 Alpine.start();
