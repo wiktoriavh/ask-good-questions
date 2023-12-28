@@ -44,7 +44,16 @@ Alpine.data('question', () => ({
     this.markup = this.output();
   },
 
+  resize(event: {
+    target: { style: { height: string }; scrollHeight: number };
+  }) {
+    const MIN_HEIGHT = Number(event.target.style.height.replace('px', ''));
 
+    event.target.style.height = `${Math.max(
+      MIN_HEIGHT,
+      event.target.scrollHeight,
+    )}px`;
+  },
 }));
 
 Alpine.start();
