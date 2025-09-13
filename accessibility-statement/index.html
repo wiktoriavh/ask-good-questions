@@ -8,6 +8,26 @@
     <title>Ask Good Questions</title>
   </head>
   <body class="dark:bg-zinc-900 dark:text-zinc-100 bg-zinc-100 px-5">
+    <!-- Site Header -->
+    <header class="py-6 border-b-[3px]">
+      <div class="max-w-[70ch] m-auto flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <a href="/" class="text-2xl font-extrabold tracking-wide flex items-center gap-2 group">
+          <span class="group-hover:underline underline-offset-4 text-teal-800 dark:text-teal-400">Ask Good Questions</span>
+          <span class="text-sm font-normal px-2 py-0.5 border rounded border-teal-800 dark:border-teal-400 text-teal-800 dark:text-teal-400">Beta</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <ul class="flex flex-wrap gap-4 text-sm font-semibold">
+            <li>
+              <a class="px-1 -mx-1 rounded text-teal-800 dark:text-teal-400 underline underline-offset-4 hover:dark:bg-teal-400 dark:bg-teal-400/5 hover:bg-teal-800 bg-teal-800/5 hover:dark:text-zinc-900 hover:text-zinc-100" href="/">Home</a>
+            </li>
+            <li>
+              <a class="px-1 -mx-1 rounded text-teal-800 dark:text-teal-400 underline underline-offset-4 hover:dark:bg-teal-400 dark:bg-teal-400/5 hover:bg-teal-800 bg-teal-800/5 hover:dark:text-zinc-900 hover:text-zinc-100" aria-current="page" href="/accessibility-statement">Accessibility Statement</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <h1 class="text-4xl font-extrabold tracking-wide text-center mt-8">
       Accessibility Statement for
       <span class="text-teal-800 dark:text-teal-400">Ask Good Questions</span>
@@ -77,5 +97,25 @@
         >.
       </p>
     </section>
+    <footer class="p-4 border-t-[3px] mt-16">
+      <ul class="flex flex-wrap gap-4">
+        <li>Site created by Wiktoria</li>
+        <li>
+          <a
+            class="px-1 -mx-1 rounded text-teal-800 dark:text-teal-400 underline underline-offset-4 hover:dark:bg-teal-400 dark:bg-teal-400/5 hover:bg-teal-800 bg-teal-800/5 hover:dark:text-zinc-900 hover:text-zinc-100"
+            href="https://github.com/Braweria/ask-good-questions"
+            >Github Repository</a
+          >
+        </li>
+        <li>
+          <a
+            class="px-1 -mx-1 rounded text-teal-800 dark:text-teal-400 underline underline-offset-4 hover:dark:bg-teal-400 dark:bg-teal-400/5 hover:bg-teal-800 bg-teal-800/5 hover:dark:text-zinc-900 hover:text-zinc-100"
+            href="/accessibility-statement"
+            aria-current="page"
+            >Accessibility Statement</a
+          >
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
